@@ -38,18 +38,18 @@ One-vs-all classification is a method which involves training distinct binary cl
 2. One vs Rest Approach:
 One-vs-rest (OvR for short, also referred to as One-vs-All or OvA) is a heuristic method for using binary classification algorithms for multi-class classification. It involves splitting the multi-class dataset into multiple binary classification problems.
 
-The final model used for the app was the Random Classifier model which had the best accuracy.
+The final model used for the app was the One vs One Classifier which had the best accuracy.
 
 
 ## Requirements
 To run a demo do the following:
 1. Clone the repository.
 2. Install the requirements from the requirements.txt file:
-```
+```py
 pip install -r requirements.txt
 ```
 3. Then from your command line run:
-```
+```py
 streamlit run penguin_predictor_app.py
 ```
 Then you can view the site on your local server.
@@ -58,7 +58,8 @@ Then you can view the site on your local server.
 
 ## Deployment
 The app was made and deployed with streamlit and streamlit cloud. 
+
 Streamlit is an open source app framework in Python language. It helps us create web apps for data science and machine learning in a short time. It is compatible with major Python libraries such as scikit-learn, Keras, PyTorch, SymPy(latex), NumPy, pandas, Matplotlib etc.
 
-The live link can be seen here:
+**The live link can be seen here:**
 https://share.streamlit.io/nneji123/penguin-species-prediction-app/main/penguin_predictor_app.py
